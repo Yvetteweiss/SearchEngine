@@ -1,0 +1,7 @@
+build
+dbs
+dist
+eggs
+logs
+project.egg-info
+.idea
