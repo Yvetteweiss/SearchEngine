@@ -3,5 +3,6 @@ dbs
 dist
 eggs
 logs
-project.egg-info
+SearchEngine.egg-info
 .idea
+venv
