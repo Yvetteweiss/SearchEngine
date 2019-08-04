@@ -8,12 +8,6 @@ from scrapy.utils.log import logger
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from SearchEngine.items import SearchEngineItem
-"""
-E:
-cd SearchEngine\SearchEngine
-workon spider-env
-scrapy crawl demo
-"""
 
 
 class DemoSpider(scrapy.Spider):
@@ -25,7 +19,7 @@ class DemoSpider(scrapy.Spider):
         'LOG_LEVEL': 'INFO',
         'RETRY_ENABLED': False,
         'DOWNLOADER_MIDDLEWARES': {
-            'SearchEngine.middlewares.ProxyMiddleware': 100,
+            # 'SearchEngine.middlewares.ProxyMiddleware': 100,
         },
         'ITEM_PIPELINES': {
             'SearchEngine.pipelines.MysqlTwistedPipeline': 100,
